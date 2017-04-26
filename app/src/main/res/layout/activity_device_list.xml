@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context="com.tic_tac_toe.control.DeviceListActivity"
+    android:background="@drawable/back">
+
+    <RelativeLayout
+        android:layout_width="325dp"
+        android:layout_height="475dp"
+        android:background="@drawable/page"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="false"
+        android:layout_marginRight="30dp"
+        android:layout_centerInParent="true">
+
+        <TextView android:id="@+id/title_paired_devices"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_paired_devices"
+            android:visibility="gone"
+            android:background="#f0d4a0"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:textIsSelectable="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="10dp" />
+
+        <ListView android:id="@+id/paired_devices"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/title_paired_devices"
+            android:paddingLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentTop="false"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+        <TextView android:id="@+id/title_new_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_other_devices"
+            android:visibility="gone"
+            android:background="#efd4b8"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/paired_devices"
+            android:textStyle="normal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:textIsSelectable="false" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:layout_alignTop="@+id/title_new_devices"
+            android:layout_marginRight="20dp"
+            android:indeterminate="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentEnd="false" />
+
+        <ListView android:id="@+id/new_devices"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_below="@+id/title_new_devices"
+            android:paddingLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SCAN NEW DEVICES"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:background="#ebcaa9"
+        android:textStyle="normal|bold"
+        android:textColor="#000000"
+        android:textAlignment="center" />
+
+</RelativeLayout>

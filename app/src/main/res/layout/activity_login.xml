@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tic_tac_toe.view.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background"
+        android:src="@mipmap/login"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="110dp"
+        android:id="@+id/button2"
+        android:background="#00ffffff"
+        android:onClick="versuscomputer"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="70dp" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="110dp"
+        android:id="@+id/button3"
+        android:onClick="twoplayer"
+        android:background="#00ffffff"
+        android:layout_below="@+id/button2"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="110dp"
+        android:id="@+id/button4"
+        android:layout_alignParentEnd="false"
+        android:background="#00ffffff"
+        android:onClick="exit"
+        android:layout_below="@+id/button3"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/setting"
+        android:background="#00ffffff"
+        android:padding="0dp"
+        android:nestedScrollingEnabled="true"
+        android:layout_margin="0dp">
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slidebtn"
+        android:src="@drawable/slidebtn"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8000000"
+    android:id="@+id/swipe">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="400dp"
+        android:id="@+id/imageView15"
+        android:src="@drawable/circle"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/mute"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/unmute" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/volup"
+        android:src="@drawable/volumeup"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="35dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/voldown"
+        android:src="@drawable/volumedown"
+        android:layout_marginLeft="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="170dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView10"
+        android:src="@drawable/settings"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

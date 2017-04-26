@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tic_tac_toe.view.TwoPlayerActivityBluetooth"
+    android:orientation="vertical"
+    android:background="@drawable/back">
+
+    <include
+        android:id="@+id/options_bar"
+        layout="@layout/tool_bar"/>
+
+    <RelativeLayout
+        android:layout_width="325dp"
+        android:layout_height="475dp"
+        android:layout_below="@id/options_bar"
+        android:background="@drawable/page"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_name"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/m_marker"
+            android:background="#00ffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/remote_name"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/marko"
+            android:hint="Player Name"
+            android:layout_below="@+id/player_name"
+            android:background="#00ffffff"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/m_marker"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/marko"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/player_name" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView13"
+            android:layout_alignParentBottom="false"
+            android:scaleType="fitXY"
+            android:background="@drawable/scand"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView10"
+            android:layout_alignParentBottom="false"
+            android:scaleType="fitXY"
+            android:background="@drawable/discb"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView11"
+        android:layout_below="@+id/options_bar"
+        android:layout_marginLeft="250dp"
+        android:src="@drawable/pointer"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView12"
+        android:layout_below="@+id/options_bar"
+        android:layout_marginLeft="305dp"
+        android:src="@drawable/pointer"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

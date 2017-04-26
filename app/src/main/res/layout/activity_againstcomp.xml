@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/f"
+        android:gravity="center"
+    tools:context="com.tic_tac_toe.view.againstcomp"
+    >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/turn"
+            android:id="@+id/urturn" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/imageView"
+                android:background="@drawable/tic_tac_toe_blank"
+                android:onClick="tic"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/imageView2"
+                android:background="@drawable/tic_tac_toe_blank"
+                android:layout_toRightOf="@+id/imageView"
+                android:onClick="tic"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="30dp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/tic_tac_toe_blank"
+                android:layout_toRightOf="@+id/imageView2"
+                android:onClick="tic"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="25dp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/tic_tac_toe_blank"
+                android:id="@+id/imageView4"
+                android:layout_below="@+id/imageView"
+                android:onClick="tic"
+                android:layout_marginTop="38dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="-10dp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/tic_tac_toe_blank"
+                android:id="@+id/imageView5"
+                android:layout_toRightOf="@+id/imageView4"
+                android:layout_below="@+id/imageView2"
+                android:onClick="tic"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginBottom="-10dp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/tic_tac_toe_blank"
+                android:id="@+id/imageView6"
+                android:layout_toRightOf="@+id/imageView5"
+                android:layout_below="@+id/imageView3"
+                android:onClick="tic"
+                android:layout_marginTop="38dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="-10dp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/tic_tac_toe_blank"
+                android:id="@+id/imageView9"
+                android:layout_toRightOf="@+id/imageView8"
+                android:layout_below="@+id/imageView6"
+                android:onClick="tic"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="45dp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/tic_tac_toe_blank"
+                android:id="@+id/imageView8"
+                android:layout_toRightOf="@+id/imageView7"
+                android:layout_below="@+id/imageView5"
+                android:onClick="tic"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="45dp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/tic_tac_toe_blank"
+                android:id="@+id/imageView7"
+                android:layout_below="@+id/imageView4"
+                android:onClick="tic"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="45dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:background="@drawable/score"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/playerscore"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/computerscore"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tic_tac_toe.SettingTwo"
+    android:background="#b4000000"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    android:alpha="200">
+
+    <ImageView android:id="@+id/imageView16"
+        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/help"
+        android:onClick="set" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scr" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:id="@+id/textView4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:text="\nAre you constantly waiting for next ‘X’ or ‘0’ ?! So let’s start…\n\n     You can either choose V/S ANDROID or TWO PLAYERS.\n\n     In V/S ANDROID, you can play against computer. To play on the same phone, select ‘Local’ and on two different phones, select ‘Bluetooth’ in TWO PLAYERS. You can either host or join in Bluetooth game. If you are a host, scan for new devices and connect to paired devices. For joining, make sure you clicked on ‘Discoverable’ icon.\n\n     Designed and Developed by Tarun Sethia, Shreya Bharti, and Shubham Shukla."
+            android:textStyle="bold"
+                android:onClick="set" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
